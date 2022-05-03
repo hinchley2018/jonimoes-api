@@ -8,7 +8,7 @@ nupkg/
 .env
 
 # Visual Studio Code
-.vscode
+
 
 # Rider
 .idea
