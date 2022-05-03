@@ -1,0 +1,47 @@
+[
+    {
+        "orderId": "uniqueId",
+        "pizzas": [
+            {
+                "toppings": [
+                    "pepperoni",
+                    "pineapples"
+                ],
+                "priceUSD": 20,
+                "size": "Medium"
+            },
+            {
+                "toppings": [
+                    "pepperoni",
+                    "meatballs"
+                ],
+                "priceUSD": 23,
+                "size": "Medium"
+            }
+        ],
+        "customerName": "Jon Snow",
+        "customerPhoneNumber": "123-456-7890",
+        "totalPriceUSD": 43
+    },
+    {
+        "orderId": "uniqueId",
+        "pizzas": [
+            {
+                "toppings": [
+                    "mushrooms",
+                    "pineapples"
+                ],
+                "priceUSD": 22,
+                "size": "Medium"
+            },
+            {
+                "toppings": [],
+                "priceUSD": 18,
+                "size": "Medium"
+            }
+        ],
+        "customerName": "Mary Snow",
+        "customerPhoneNumber": "098-765-4321",
+        "totalPriceUSD": 40
+    }
+]
