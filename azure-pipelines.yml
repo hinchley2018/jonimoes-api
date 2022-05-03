@@ -14,7 +14,10 @@ variables:
   imageRepository: 'jonimoesapi'
   containerRegistry: 'jonimoes.azurecr.io'
   dockerfilePath: '**/Dockerfile'
-  tag: '$(Build.BuildId)'
+  #we want to know the build
+  buildTag: '$(Build.BuildId)'
+  #for now hard code it to be latest
+  latestTag: 'latest'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
@@ -36,4 +39,5 @@ stages:
         dockerfile: $(dockerfilePath)
         containerRegistry: $(dockerRegistryServiceConnection)
         tags: |
-          $(tag)
+          $(buildTag)
+          $(latestTag)
