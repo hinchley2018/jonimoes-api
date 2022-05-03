@@ -13,7 +13,8 @@ namespace JonimoesApi.Controllers
         [HttpGet("")]
         public IActionResult GetOrders()
         {
-            return Ok();
+            var orders = new List<string>();
+            return Ok(orders);
         }
     }
 }
